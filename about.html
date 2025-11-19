@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taniti Website Wireframe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>        
+        <h1>Welcome to Taniti</h1>
+        <p>Your tropical getaway destination</p>
+        <a href="home.html">
+            <img src="solo.jpeg" alt="A young woman in a swimsuit stands with her toes in gentle waves at the beach" width="200" height="200" style="display: block; margin: 0 auto;">
+        </a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="about.html" style="padding: 4px 8px; text-decoration: none;">About Taniti</a></li>
+            <li><a href="accommodations.html" style="padding: 4px 8px; text-decoration: none;">Accommodations</a></li>
+            <li><a href="attractions.html" style="padding: 4px 8px; text-decoration: none;">Attractions</a></li>
+            <li><a href="transportation.html" style="padding: 4px 8px; text-decoration: none;">Transportation</a></li>
+            <li><a href="contact.html" style="padding: 4px 8px; text-decoration: none;">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Taniti</h2>
+        <p>Here is information about the island's history, culture, and natural beauty.</p>
+        <img src="Flag.png" alt="A young woman in a swimsuit stands with her toes in gentle waves at the beach" width="300" height="200" style="display: block; margin: 0 auto;">
+        <p>Taniti is a tropical island nation known for its stunning beaches, lush rainforests, active volcano, and vibrant culture. Founded in the early 1800s, Taniti has a rich history influenced by indigenous peoples, European explorers, and modern tourism. The island offers a unique blend of natural beauty and cultural experiences, making it a popular destination for travelers seeking adventure and relaxation alike.</p>
+        <p>Below is some key information you'll want to consider when making plans to visit our beautiful contry.</p>        
+        <ul>
+            <li>Power outlets are 120 volts (the same as in the United States).</li>
+            <li>Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m.</li>
+            <li>The drinking age on Taniti is 18 and the drinking age is not strictly enforced.</li>
+            <li>Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</li>
+            <li>There is one hospital and several clinics. The hospital has many multilingual employees.</li>
+            <li>Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes.</li>
+            <li>Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</li>
+            <li>Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</li>
+        </ul>
+    </section>    
+    <footer>
+        <p>Contact Us</p>
+        <p>email: <a href="mailto:info@tanitiisland.com" style="color: #007bff; text-decoration: none;">info@tanitiisland.com</a> | Phone: <a href="tel:(555) 123-4567" style="color: #007bff; text-decoration: none;">(555) 123-4567</a></p>
+    </footer>
+</body>
+</html>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Get current page filename
+    const currentPage = location.pathname.split('/').pop();
+    // Select all nav links
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.style.border = "2px solid #222";
+            link.style.borderRadius = "4px";
+            link.style.padding = "4px 8px";
+        }
+    });
+});
+</script>
